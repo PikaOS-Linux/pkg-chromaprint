@@ -11,7 +11,7 @@ cd ./chromaprint
 apt-get build-dep ./ -y
 
 # Build package
-#LOGNAME=root dh_make --createorig -y -l -p chromaprint_1.5.1
+LOGNAME=root dh_make --createorig -y -l -p chromaprint_1.5.1
 dpkg-buildpackage
 
 # Move the debs to output

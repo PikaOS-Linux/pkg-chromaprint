@@ -14,7 +14,7 @@ apt-get install crossbuild-essential-i386 lib32gcc-11-dev -y
 apt-get build-dep ./ -y -a i386
 
 # Build package
-#LOGNAME=root dh_make --createorig -y -l -p chromaprint_1.5.1
+LOGNAME=root dh_make --createorig -y -l -p chromaprint_1.5.1
 dpkg-buildpackage -a i386
 
 # Move the debs to output
