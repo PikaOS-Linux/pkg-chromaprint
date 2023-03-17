@@ -5,7 +5,8 @@ add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
 
 # Clone Upstream
-git clone https://github.com/acoustid/chromaprint.git
+tar -xf chromaprint_1.5.1.orig.tar.xz -C ./
+mv ./chromaprint-1.5.1 ./chromaprint
 cp -rvf ./debian ./chromaprint
 cd ./chromaprint
 
@@ -13,7 +14,7 @@ cd ./chromaprint
 apt-get build-dep ./ -y
 
 # Build package
-LOGNAME=root dh_make --createorig -y -l -p chromaprint_1.5.1
+#LOGNAME=root dh_make --createorig -y -l -p chromaprint_1.5.1
 dpkg-buildpackage
 
 # Move the debs to output
