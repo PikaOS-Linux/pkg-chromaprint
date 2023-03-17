@@ -6,9 +6,6 @@ add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
 
 # Clone Upstream
-tar -xf chromaprint_1.5.1.orig.tar.xz -C ./
-mv ./chromaprint-1.5.1 ./chromaprint
-cp -rvf ./debian ./chromaprint
 cd ./chromaprint
 
 # Get build deps
