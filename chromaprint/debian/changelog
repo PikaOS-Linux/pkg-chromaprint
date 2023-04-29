@@ -1,3 +1,9 @@
+chromaprint (1.5.1-99pika8.lunar) lunar; urgency=medium
+
+  * Update to lunar
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Wed, 16 Feb 2022 23:02:01 +0100
+
 chromaprint (1.5.1-99pika7) kinetic; urgency=medium
 
   * Rebuild againtst ffmpeg 6
